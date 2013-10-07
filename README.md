@@ -32,6 +32,7 @@ Prepare Mailboxes for Cross-Forest Move Requests:
 http://technet.microsoft.com/en-us/library/ee633491.aspx
 
 run this on the old Exchange (2003?):
+
 csvde -l displayName,samAccountName,mailNickname,mail,targetAddress,proxyAddresses,altRecipient -r "objectclass=user" -f c:\transfer_Mailboxes_to_exchange_2010.csv
 
 On the new Exchange you can run the ps1 script attached to this repository.
